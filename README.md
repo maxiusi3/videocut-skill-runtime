@@ -4,12 +4,6 @@ VideoCut Skill Runtime is the local CLI used by the public VideoCut paid skill. 
 
 This package is published on PyPI as `videocut-skill`.
 
-PyPI publishing is prepared but still waiting on Trusted Publisher setup in PyPI. Until the first PyPI release is live, install from GitHub with:
-
-```bash
-python3 -m pip install --user --break-system-packages pipx && python3 -m pipx install "git+https://github.com/maxiusi3/videocut-skill-runtime.git"
-```
-
 ## Requirements
 
 - Python `3.10+`
