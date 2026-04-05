@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "videocut-skill"
+version = "0.1.0"
+description = "Shared local runtime for the VideoCut paid skill"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.27.0"]
+keywords = ["videocut", "cli", "skill", "claude-code", "codex"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video",
+]
+
+[project.scripts]
+videocut-skill = "videocut_skill.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/maxiusi3/videocut-skill-runtime"
+Source = "https://github.com/maxiusi3/videocut-skill-runtime"
+Issues = "https://github.com/maxiusi3/videocut/issues"
+
+[tool.setuptools.packages.find]
+include = ["videocut_skill*"]
